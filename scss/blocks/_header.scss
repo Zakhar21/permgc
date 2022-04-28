@@ -1,0 +1,119 @@
+.header{
+    // padding: 14px 0 23px 0;
+    height: 104px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    &__flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__burger-wrapper{
+        width: 155px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        gap:97px
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        gap:103px
+    }
+    &__mail-wrapper,
+    &__phone-wrapper,
+    &__map-wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__mail-icon,
+    &__phone-icon,
+    &__map-icon{
+        margin-right: 14px;
+        position: relative;
+        top: 2px;
+    }
+    &__mail-text,
+    &__phone-text,
+    &__map-text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__mail-text a,
+    &__phone-text a,
+    &__map-text a{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__mail-text button,
+    &__phone-text button,
+    &__map-text span{
+        display: inline-flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #377ED9;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 12px;
+    }
+}
+// burger
+.burger{
+    height: 100%;
+    width: 60px;
+    background-color: #377ED9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__line{
+        display: block;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top:8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 28px;
+            height: 2px;
+            background: #fff;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom:8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 28px;
+            height: 2px;
+            background: #fff;
+        }
+    }
+}
+.header__burger__text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    width: 95px;
+    height: 100%;
+    color:#000;
+    line-height: 24px;
+}

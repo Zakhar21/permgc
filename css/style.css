@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'gotham';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1594px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 104px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__burger-wrapper {
+  width: 155px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 97px;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 103px;
+}
+
+.header__mail-wrapper, .header__phone-wrapper, .header__map-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header__mail-icon, .header__phone-icon, .header__map-icon {
+  margin-right: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.header__mail-text, .header__phone-text, .header__map-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__mail-text a,
+.header__phone-text a,
+.header__map-text a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__mail-text button,
+.header__phone-text button,
+.header__map-text span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #377ED9;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 12px;
+}
+
+.burger {
+  height: 100%;
+  width: 60px;
+  background-color: #377ED9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.burger__line {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+}
+
+.burger__line::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 28px;
+  height: 2px;
+  background: #fff;
+}
+
+.burger__line::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 28px;
+  height: 2px;
+  background: #fff;
+}
+
+.header__burger__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F1F1F1;
+  width: 95px;
+  height: 100%;
+  color: #000;
+  line-height: 24px;
+}
+
+.main {
+  background-image: url(../../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 564px;
+  margin-top: 112px;
+}
+/*# sourceMappingURL=style.css.map */
