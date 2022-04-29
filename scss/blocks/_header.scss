@@ -68,6 +68,19 @@
         justify-content: center;
         position: relative;
         top: 12px;
+        z-index: 1;
+        &::before{
+            content: '';
+            width: 246px;
+            height: 186px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top:-25px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
     }
 }
 // burger
