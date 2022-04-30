@@ -1,0 +1,125 @@
+.services{
+    &__inner{
+        background-color: #F4F4F4;
+        padding: 80px 132px 96px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px; 
+        color:#000;
+        margin-bottom: 16px;
+    }
+    &__text{
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+    &__images{
+        display: flex;
+        gap:20px;
+        align-items: center;
+        margin-bottom: 44px;
+    }
+    &__images-img{
+        width: 310px;
+        height: 310px;
+        & img{
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;  
+        margin-bottom: 16px;
+    }
+    &__subtitle--bm{
+        margin-bottom: 28px;
+    }
+    &__list{
+        list-style-type: square;
+        color:#377ED9;
+        line-height: 24px;
+        margin-bottom: 8px;
+        margin-left: 20px;
+        margin-bottom: 28px;
+        & span{
+            display: inline-block;
+            color:#000;
+        }
+    }
+
+    &__infographics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 40px 36px;
+        background: #fff;
+        margin-bottom: 28px;
+    }
+    &__infographics-img{
+        & img{
+            width: 640px;
+            height: 455px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+    }
+    &__infographics-text{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    &__num-list{
+        margin-bottom: 72px;
+    }
+    &__num-item{
+        display: flex;
+        margin-bottom: 8px;
+    }
+    &__num-number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        line-height: 24px;
+        color: #377ED9;
+        width: 24px;
+        margin-right: 12px;
+    }
+    &__num-text{
+        font-weight: 400;
+        line-height: 24px;
+        color:#000;
+    }
+    &__video{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    &__table{
+        display: flex;
+        flex-direction: column;
+    }
+    &__table-box{
+        display: flex;
+        background-color: #fff;
+        padding: 16px 40px;
+        margin-bottom: 2px;
+    }
+    &__table-text{
+        flex:0 0 70%;
+        margin-right: 112px;
+    }
+    &__table-text--titleHead,
+    &__table-text--priceHead{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color:#377ED9;
+    }
+}
+.vjs-poster{
+    background-size: cover;
+}
