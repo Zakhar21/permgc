@@ -3,6 +3,10 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    overflow-x: hidden;
+}
+body.overflow{
+    overflow: hidden;
 }
 .container{
     max-width: 1594px;
