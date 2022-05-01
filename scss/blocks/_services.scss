@@ -38,6 +38,9 @@
     &__subtitle--bm{
         margin-bottom: 28px;
     }
+    &__subtitle--big{
+        font-size: 32px;
+    }
     &__list{
         list-style-type: square;
         color:#377ED9;
@@ -118,6 +121,77 @@
         font-size: 20px;
         line-height: 28px;
         color:#377ED9;
+    }
+    &__manual{
+        margin-bottom: 84px;
+    }
+    &__manual-box{
+        margin-top: 68px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 62px;
+    }
+    &__manual-item{
+        background-color: #fff;
+        min-width: 420px;
+        padding: 48px 36px 32px;
+        position: relative;
+    }
+    &__manual-number{
+        position: absolute;
+        top: -18px;
+        left: 42px;
+        display: inline-block;
+        background-color: #fff;
+        border:4px solid #F88568;
+        width: 38px;
+        height: 38px;
+        transform: rotate(45deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & span{
+            transform: rotate(-45deg);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #F88568;
+        }
+    }
+    &__manual-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        color:#000;
+    }
+    &__manual-text{
+        line-height: 24px;
+        color: #000;
+    }
+    &__contact{
+        background-image: url(../../img/form-images-bg.jpg);
+        padding: 68px 100px 99px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color:#fff;
+    }
+    &__contact-overlay{
+        position: absolute;
+        background-color: rgba(8, 33, 62, 0.7);
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    &__contact-left,
+    &__contact-right{
+        position: relative;
+        z-index: 2;
     }
 }
 .vjs-poster{
