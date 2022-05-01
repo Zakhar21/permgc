@@ -2,6 +2,7 @@
     &__inner{
         background-color: #F4F4F4;
         padding: 80px 132px 96px;
+        margin-bottom: 80px;
     }
     &__title{
         font-weight: 700;
@@ -178,6 +179,7 @@
         align-items: center;
         justify-content: space-between;
         color:#fff;
+        margin-bottom: 80px;
     }
     &__contact-overlay{
         position: absolute;
@@ -192,6 +194,114 @@
     &__contact-right{
         position: relative;
         z-index: 2;
+    }
+    &__contact-left{
+        max-width: 540px;
+        margin-right: 20px;
+    }
+    &__contact-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    &__contact-text{
+        padding-bottom: 36px;
+        border-bottom:1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 36px;
+        & span{
+            font-weight: 700;
+            text-transform: uppercase;
+            color:#F88568;
+        }
+    }
+    &__contact-box{
+        display: flex;
+        align-items: center;
+        & img{
+            margin-right: 28px;
+        }
+    }
+    &__contact-subtext{
+        & a{
+            font-weight: 700;
+        }
+    }
+    &__contact-form{
+        display: flex;
+        flex-direction: column;
+        max-width: 336px;
+
+        & input{
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            padding: 12px 24px;
+            margin-bottom: 24px;
+            outline: none;
+            color:#fff;
+            font-size: 16px;
+
+            &::placeholder{
+                font-family: inherit;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color:rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+    &__contact-btn{
+        background-color: #fff;
+        color:#377ED9;
+        padding: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 20px;
+        position: relative;
+        transition: all .2s ease;
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 6px;
+            top: 4px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #fff;
+            transition: all .2s ease;
+        }
+        &:hover{
+            &::before{
+                left: 0px;
+                top: 0px;
+                border: 1px solid #fff;
+            }
+        }
+    }
+    &__contact-form-text{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+
+        & a{
+            text-decoration: underline;
+        }
+    }
+
+    &__certificate-box{
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+    }
+    &__certificate-item{
+        max-width: 310px;
+        max-height: 394px;
+    }
+    &__certificate-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 .vjs-poster{
