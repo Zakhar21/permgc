@@ -1,0 +1,77 @@
+@media screen and (max-width:1480px) {
+    .header{
+        &__left{
+            gap:77px;
+        }
+        &__right{
+            gap:66px;
+        }
+        &__burger__text{
+            width: 90px;
+        }
+        &__logo{
+            & img{
+                width: 174px;
+            }
+            &::before{
+                height: 140px;
+                width: 174px;
+            }
+        }
+    }
+
+
+    .main{
+        margin-top: 84px;
+    }
+}
+@media screen and (max-width:1280px){
+    .header{
+        &__left{
+            gap:50px;
+        }
+        &__right{
+            gap:50px;
+        }
+        &__logo{
+            & img{
+                width: 148px;
+            }
+            &::before{
+                height: 120px;
+                width: 148px;
+            }
+        }
+        &__mail-text a,
+        &__phone-text a,
+        &__map-text a{
+                font-size: 16px;
+        }
+        &__mail-text button,
+        &__phone-text button,
+        &__map-text span{
+            font-size: 12px;
+        }
+        &__burger-wrapper{
+            width: 115px;
+        }
+    }
+    .main{
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .header{
+        &__mail-wrapper{
+            display: none;
+        }
+        &__map-wrapper{
+            display: none;
+        }
+        &__burger-wrapper {
+            width: 105px;
+            height: 40px;
+        }
+    }
+}

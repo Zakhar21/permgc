@@ -13,3 +13,32 @@ body.overflow{
     padding: 0 15px;
     margin: 0 auto;
 }
+
+
+@media screen and (max-width:1480px) {
+    .header{
+        &__left{
+            gap:77px;
+        }
+        &__right{
+            gap:66px;
+        }
+        &__burger__text{
+            width: 90px;
+        }
+        &__logo{
+            & img{
+                width: 174px;
+            }
+            &::before{
+                height: 140px;
+                width: 174px;
+            }
+        }
+    }
+
+
+    .main{
+        margin-top: 84px;
+    }
+}
