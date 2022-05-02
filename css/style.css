@@ -1200,6 +1200,62 @@ body.overflow {
   .main {
     margin-top: 75px;
   }
+  .main__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .main__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .form {
+    padding: 28px 44px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .form__input {
+    padding: 11px 17px;
+    margin-bottom: 16px;
+  }
+  .form__input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .form__input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form__input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form__input::placeholder {
+    font-size: 14px;
+  }
+  .form__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .reasons {
+    padding: 38px 0 52px;
+  }
+  .reasons__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 28px 40px;
+  }
+  .reasons__item-num {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 24px;
+  }
+  .reasons__item-num::before {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1212,6 +1268,50 @@ body.overflow {
   .header__burger-wrapper {
     width: 105px;
     height: 40px;
+  }
+  .main__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .main__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 70px 0 64px 0;
+  }
+  .main__flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 467px;
+            flex: 1 0 467px;
+    padding: 28px 36px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .form__text {
+    font-size: 14px;
+  }
+  .reasons__item {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
