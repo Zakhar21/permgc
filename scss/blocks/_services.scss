@@ -64,9 +64,11 @@
         margin-bottom: 28px;
     }
     &__infographics-img{
+        width: 640px;
+        height: 455px;
         & img{
-            width: 640px;
-            height: 455px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             margin-bottom: 16px;
         }
@@ -302,6 +304,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 .vjs-poster{
